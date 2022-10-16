@@ -1,4 +1,11 @@
+//
+//Important notes
+//
 // npm install music-metadata@7.13.0
+//
+// In Electron .html, include the below security-policy. This will allow you to use a data source for the <img> html element.
+//     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'">
+
 const mm = require('music-metadata')
 const url = require('url')
 const path = require('path')
